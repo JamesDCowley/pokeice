@@ -3,6 +3,7 @@
 	const PLAYERSHOUSE2F_DOLL_1
 	const PLAYERSHOUSE2F_DOLL_2
 	const PLAYERSHOUSE2F_BIG_DOLL
+	const PLAYERSHOUSE2F_TROPHY
 
 PlayersHouse2F_MapScripts:
 	def_scene_scripts
@@ -30,6 +31,9 @@ PlayersHouse2FSetUpTileDecorationsCallback:
 	endcallback
 
 	db 0, 0, 0 ; unused
+
+PlayersHouseTrophyScript:
+	jumptext TrophyText
 
 PlayersHouseDoll1Script::
 	describedecoration DECODESC_LEFT_DOLL
@@ -62,7 +66,7 @@ PlayersHouseRadioScript:
 	pause 45
 	writetext PlayersRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, 16
+	musicfadeout MUSIC_SILENT_TOWN, 16
 	writetext PlayersRadioText4
 	pause 45
 	closetext
@@ -112,6 +116,14 @@ PlayersRadioText4:
 	line "#MON CHANNEL…"
 	done
 
+TrophyText:
+	text "DAD's old trophy."
+	line "... ..."
+	para "ORCHID #MON"
+	line "LEAGUE CHAMPION"
+	cont "1992"
+	done
+
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
@@ -131,3 +143,4 @@ PlayersHouse2F_MapEvents:
 	object_event  4,  4, SPRITE_DOLL_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll1Script, EVENT_PLAYERS_HOUSE_2F_DOLL_1
 	object_event  5,  4, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
 	object_event  0,  1, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseBigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL
+	object_event  2,  4, SPRITE_SILVER_TROPHY, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseTrophyScript, -1

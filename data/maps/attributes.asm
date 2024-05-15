@@ -96,7 +96,7 @@ MACRO connection
 	endc
 ENDM
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, 0
+	map_attributes SilentTown, SILENT_TOWN, $05, 0
 
 	map_attributes BattleTowerOutside, BATTLE_TOWER_OUTSIDE, $05, 0
 
@@ -112,6 +112,7 @@ ENDM
 
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
+	map_attributes SilentTownNeighborsHouse, SILENT_TOWN_NEIGHBORS_HOUSE, $00, 0
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0

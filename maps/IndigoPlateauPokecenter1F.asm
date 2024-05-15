@@ -46,8 +46,8 @@ IndigoPlateauPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  5, 13, NEW_BARK_TOWN, 3
-	warp_event  6, 13, NEW_BARK_TOWN, 3
+	warp_event  5, 13, SILENT_TOWN, 3
+	warp_event  6, 13, SILENT_TOWN, 3
 	warp_event  0, 13, POKECENTER_2F, 1
 	warp_event 14,  3, WILLS_ROOM, 1
 

@@ -17,9 +17,10 @@ INCLUDE "maps/BattleTowerBattleRoom.asm"
 
 SECTION "Map Scripts 3", ROMX
 
-INCLUDE "maps/NewBarkTown.asm"
+INCLUDE "maps/SilentTown.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
+INCLUDE "maps/SilentTownNeighborsHouse.asm"
 
 
 SECTION "Map Scripts 4", ROMX

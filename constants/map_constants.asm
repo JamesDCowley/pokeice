@@ -50,10 +50,11 @@ ENDM
 	map_const BATTLE_TOWER_BATTLE_ROOM,                     4,  4 ;  5
 	endgroup
 
-	newgroup NEW_BARK                                             ;  3
-	map_const NEW_BARK_TOWN,                               10,  9 ;  1
+	newgroup SILENT                                             ;  3
+	map_const SILENT_TOWN,                                 10, 18 ;  1
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3
+	map_const SILENT_TOWN_NEIGHBORS_HOUSE,				    4,  4 ;  4
 	endgroup
 
 	newgroup INDIGO                                               ;  4

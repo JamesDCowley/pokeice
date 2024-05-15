@@ -55,13 +55,13 @@ SpecialAerodactylChamber:
 	push de
 	push bc
 
-; TODO: Replace NewBarkTown_MapAttributes with the appropriate label for the Aerodactyl chamber.
+; TODO: Replace SilentTown_MapAttributes with the appropriate label for the Aerodactyl chamber.
 	call GetMapAttributesPointer
 	ld a, h
-	cp HIGH(NewBarkTown_MapAttributes)
+	cp HIGH(SilentTown_MapAttributes)
 	jr nz, .nope
 	ld a, l
-	cp LOW(NewBarkTown_MapAttributes)
+	cp LOW(SilentTown_MapAttributes)
 	jr nz, .nope
 
 	ld de, EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
@@ -83,13 +83,13 @@ SpecialKabutoChamber:
 	push hl
 	push de
 
-; TODO: Replace NewBarkTown_MapAttributes with the appropriate label for the Kabuto chamber.
+; TODO: Replace SilentTown_MapAttributes with the appropriate label for the Kabuto chamber.
 	call GetMapAttributesPointer
 	ld a, h
-	cp HIGH(NewBarkTown_MapAttributes)
+	cp HIGH(SilentTown_MapAttributes)
 	jr nz, .done
 	ld a, l
-	cp LOW(NewBarkTown_MapAttributes)
+	cp LOW(SilentTown_MapAttributes)
 	jr nz, .done
 
 	ld de, EVENT_WALL_OPENED_IN_KABUTO_CHAMBER

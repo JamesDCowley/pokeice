@@ -28,14 +28,17 @@ BattleTowerBattleRoom_Blocks:
 
 SECTION "Map Blocks 2", ROMX
 
-NewBarkTown_Blocks:
-	INCBIN "maps/NewBarkTown.blk"
+SilentTown_Blocks:
+	INCBIN "maps/SilentTown.blk"
 
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
 
 PlayersHouse2F_Blocks:
 	INCBIN "maps/PlayersHouse2F.blk"
+
+SilentTownNeighborsHouse_Blocks:
+	INCBIN "maps/SilentTownNeighborsHouse.blk"
 
 
 SECTION "Map Blocks 3", ROMX
