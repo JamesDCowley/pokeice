@@ -226,7 +226,7 @@ TownMap_InitCursorAndPlayerIconPositions:
 
 .FastShip:
 	ld [wPokegearMapPlayerIconLandmark], a
-	ld a, LANDMARK_NEW_BARK_TOWN
+	ld a, LANDMARK_SILENT_TOWN
 	ld [wPokegearMapCursorLandmark], a
 	ret
 
@@ -566,8 +566,8 @@ PokegearMap_KantoMap:
 
 PokegearMap_JohtoMap:
 ; TODO: Change these to the last and first landmarks of the Johto region.
-	ld d, LANDMARK_SILVER_CAVE
-	ld e, LANDMARK_NEW_BARK_TOWN
+	ld d, LANDMARK_ICICLE_LAKE
+	ld e, LANDMARK_SILENT_TOWN
 PokegearMap_ContinueMap:
 	ld hl, hJoyLast
 	ld a, [hl]
