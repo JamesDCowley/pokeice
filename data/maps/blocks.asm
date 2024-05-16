@@ -40,6 +40,9 @@ PlayersHouse2F_Blocks:
 SilentTownNeighborsHouse_Blocks:
 	INCBIN "maps/SilentTownNeighborsHouse.blk"
 
+Route14_Blocks:
+	INCBIN "maps/Route14.blk"
+
 
 SECTION "Map Blocks 3", ROMX
 

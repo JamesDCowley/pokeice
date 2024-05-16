@@ -1,4 +1,5 @@
 	object_const_def
+	const SILENT_TOWN_SUPER_NERD
 
 SilentTown_MapScripts:
 	def_scene_scripts
@@ -10,6 +11,9 @@ SilentTownFlypointCallback:
 	setflag ENGINE_FLYPOINT_NEW_BARK
 	clearevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 	endcallback
+
+SilentTownSuperNerdScript:
+	jumptextfaceplayer Text_urMom
 
 SilentTownPlayersHouseSign:
 	jumptext SilentTownPlayersHouseSignText
@@ -26,6 +30,11 @@ SilentTownGymSign:
 
 SilentTownPlayersHouseSignText:
 	text "<PLAYER>'s House"
+	done
+
+Text_urMom:
+	text "ur mom is gay"
+	line "lmao get pwned"
 	done
 
 Text_SilentTownDesc:
@@ -71,3 +80,4 @@ SilentTown_MapEvents:
 	bg_event 18,  8, BGEVENT_READ, SilentTownGymSign
 
 	def_object_events
+	object_event  15, 18, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SilentTownSuperNerdScript, -1

@@ -21,6 +21,7 @@ INCLUDE "maps/SilentTown.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
 INCLUDE "maps/SilentTownNeighborsHouse.asm"
+INCLUDE "maps/Route14.asm"
 
 
 SECTION "Map Scripts 4", ROMX
