@@ -51,7 +51,7 @@ ENDM
 	endgroup
 
 	newgroup SILENT                                             ;  3
-	map_const SILENT_TOWN,                                 10, 18 ;  1
+	map_const SILENT_TOWN,                                 10, 15 ;  1
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3
 	map_const SILENT_TOWN_NEIGHBORS_HOUSE,				    4,  4 ;  4

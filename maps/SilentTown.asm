@@ -14,22 +14,60 @@ SilentTownFlypointCallback:
 SilentTownPlayersHouseSign:
 	jumptext SilentTownPlayersHouseSignText
 
+SilentTownAspenLabSign:
+	; TODO logic for when lab is put up for sale by GLACIER INC.
+	jumptext Text_AspenLab
+
+SilentTownSign:
+	jumptext Text_SilentTownDesc
+
+SilentTownGymSign:
+	jumptext Text_SilentTownGym
+
 SilentTownPlayersHouseSignText:
 	text "<PLAYER>'s House"
+	done
+
+Text_SilentTownDesc:
+	text "SILENT TOWN"
+
+	para "Where winds howl"
+	line "and water blows."
+
+	para "The oldest town"
+	line "in KORI."
+	done
+
+Text_AspenLab:
+	text "ASPEN LABS"
+	
+	para "The newest"
+	line "frontier of"
+	cont "#MON"
+	cont "research!"
+	done
+
+Text_SilentTownGym:
+	text "SILENT TOWN GYM"
+
+	para "LEADER: ASPEN"
 	done
 
 SilentTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  5, 29, PLAYERS_HOUSE_1F, 1
-	warp_event  4, 13, BATTLE_TOWER_OUTSIDE, 1
-	warp_event 14,  9, INDIGO_PLATEAU_POKECENTER_1F, 1
-	warp_event 17, 31, SILENT_TOWN_NEIGHBORS_HOUSE, 1
+	warp_event  5, 23, PLAYERS_HOUSE_1F, 1
+	warp_event  2,  5, BATTLE_TOWER_OUTSIDE, 1
+	warp_event 16,  7, INDIGO_PLATEAU_POKECENTER_1F, 1
+	warp_event 17, 25, SILENT_TOWN_NEIGHBORS_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  4, 30, BGEVENT_READ, SilentTownPlayersHouseSign
+	bg_event  4, 24, BGEVENT_READ, SilentTownPlayersHouseSign
+	bg_event  5,  7, BGEVENT_READ, SilentTownAspenLabSign
+	bg_event 10,  4, BGEVENT_READ, SilentTownSign
+	bg_event 18,  8, BGEVENT_READ, SilentTownGymSign
 
 	def_object_events
