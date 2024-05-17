@@ -40,7 +40,7 @@ MeetMomScript:
 	scall PlayersHouse1FReceiveItemStd
 	setflag ENGINE_POKEGEAR
 	setflag ENGINE_PHONE_CARD
-	setflag ENGINE_MAP_CARD
+	; setflag ENGINE_MAP_CARD
 	addcellnum PHONE_MOM
 	setscene SCENE_PLAYERSHOUSE1F_NOOP
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
@@ -79,16 +79,7 @@ MeetMomScript:
 
 .FinishPhone:
 	writetext InstructionsNextText
-	waitbutton
-	writetext GetStarterText
 	promptbutton
-	waitsfx
-	getmonname STRING_BUFFER_3, PIKACHU
-	writetext ReceivedStarterText
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	promptbutton
-	givepoke PIKACHU, 5, BERRY
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue .FromRight
@@ -132,7 +123,7 @@ MomScript:
 	iftrue .BankOfMom
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue .GaveMysteryEgg
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_POKEMON
 	iftrue .GotAPokemon
 	writetext HurryUpElmIsWaitingText
 	waitbutton
@@ -163,6 +154,8 @@ MomScript:
 NeighborScript:
 	faceplayer
 	opentext
+	checkevent EVENT_SAVED_ASPEN
+	iftrue .GiveMapCardScript
 	checktime MORN
 	iftrue .MornScript
 	checktime DAY
@@ -170,6 +163,15 @@ NeighborScript:
 	checktime NITE
 	iftrue .NiteScript
 
+.GiveMapCardScript
+	checkflag ENGINE_MAP_CARD
+	iftrue .DayScript
+	writetext NeighborGiveMapCardText
+	waitbutton
+	setflag ENGINE_MAP_CARD
+	closetext
+	turnobject PLAYERSHOUSE1F_POKEFAN_F, RIGHT
+	end
 .MornScript:
 	writetext NeighborMornIntroText
 	promptbutton
@@ -377,6 +379,21 @@ NeighborText:
 	para "She really loves"
 	line "#MON!"
 	done
+
+NeighborGiveMapCardText:
+	text "You're getting"
+	line "ready for"
+	cont "an adventure?"
+
+	para "Here, take this"
+	line "MAP CARD!"
+
+	para "It will tell"
+	line "you where are!"
+
+	para "Isn't it handy?"
+	done
+
 
 PlayersHouse1FStoveText:
 	text "Mom's specialty!"

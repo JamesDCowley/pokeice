@@ -6,7 +6,7 @@ OutdoorSprites:
 	table_width 2, OutdoorSprites
 	dw CableClubGroupSprites
 	dw BattleTowerGroupSprites
-	dw NewBarkGroupSprites
+	dw SilentGroupSprites
 	dw IndigoGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
@@ -60,7 +60,8 @@ BattleTowerGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_POKEDEX
 
-NewBarkGroupSprites:
+SilentGroupSprites:
+	; 12 non-walking filler sprites
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY
 	db SPRITE_FAMICOM
@@ -73,15 +74,17 @@ NewBarkGroupSprites:
 	db SPRITE_BIG_ONIX
 	db SPRITE_SUDOWOODO
 	db SPRITE_BIG_SNORLAX
+	; 9 walking sprites
 	db SPRITE_COOLTRAINER_M
-	db SPRITE_COOLTRAINER_F
-	db SPRITE_BUG_CATCHER
+	db SPRITE_ELM
+	db SPRITE_SCIENTIST
 	db SPRITE_TWIN
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_TEACHER
 	db SPRITE_BEAUTY
 	db SPRITE_SUPER_NERD
+	; 2 non-walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_POKEDEX
 

@@ -16,7 +16,7 @@ ElmPhoneCalleeScript:
 	iftrue .checkingegg
 	checkevent EVENT_ELM_CALLED_ABOUT_STOLEN_POKEMON
 	iftrue .stolen
-	checkevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
+	checkevent EVENT_SAVED_ASPEN
 	iftrue .sawmrpokemon
 	farwritetext ElmPhoneHealYourMonText
 	end

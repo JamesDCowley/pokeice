@@ -77,7 +77,7 @@ SilentTown_MapEvents:
 	bg_event  4, 24, BGEVENT_READ, SilentTownPlayersHouseSign
 	bg_event  5,  7, BGEVENT_READ, SilentTownAspenLabSign
 	bg_event 10,  4, BGEVENT_READ, SilentTownSign
-	bg_event 18,  8, BGEVENT_READ, SilentTownGymSign
+	bg_event 13,  7, BGEVENT_READ, SilentTownGymSign
 
 	def_object_events
 	object_event  15, 18, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SilentTownSuperNerdScript, -1

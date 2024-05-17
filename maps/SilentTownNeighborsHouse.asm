@@ -8,7 +8,7 @@ SilentTownNeighborsHouse_MapScripts:
     def_callbacks
 
 SilentTownNeighborsHouseTeacherScript:
-    checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+    checkevent EVENT_GOT_POKEMON
     iftrue .MonIsAdorable
     jumptext Text_AspenLookingForYou
 
