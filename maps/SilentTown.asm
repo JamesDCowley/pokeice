@@ -67,7 +67,7 @@ SilentTown_MapEvents:
 
 	def_warp_events
 	warp_event  5, 23, PLAYERS_HOUSE_1F, 1
-	warp_event  2,  5, BATTLE_TOWER_OUTSIDE, 1
+	warp_event  2,  5, PROF_ASPEN_LAB, 1
 	warp_event 16,  7, INDIGO_PLATEAU_POKECENTER_1F, 1
 	warp_event 17, 25, SILENT_TOWN_NEIGHBORS_HOUSE, 1
 

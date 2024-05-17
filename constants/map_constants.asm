@@ -56,6 +56,7 @@ ENDM
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3
 	map_const SILENT_TOWN_NEIGHBORS_HOUSE,				    4,  4 ;  4
 	map_const ROUTE_14,      							   10, 18 ;  5
+	map_const PROF_ASPEN_LAB,								5, 10 ;  6
 	endgroup
 
 	newgroup INDIGO                                               ;  4

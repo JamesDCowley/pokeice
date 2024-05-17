@@ -118,6 +118,8 @@ ENDM
 	map_attributes Route14, ROUTE_14, $05, SOUTH
 	connection south, SilentTown, SILENT_TOWN, 0
 
+	map_attributes ProfAspenLab, PROF_ASPEN_LAB, $00, 0
+
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0
 	map_attributes KogasRoom, KOGAS_ROOM, $00, 0

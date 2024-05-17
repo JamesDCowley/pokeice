@@ -42,6 +42,8 @@ SilentTownNeighborsHouse_Blocks:
 
 Route14_Blocks:
 	INCBIN "maps/Route14.blk"
+ProfAspenLab_Blocks:
+	INCBIN "maps/ProfAspenLab.blk"
 
 
 SECTION "Map Blocks 3", ROMX
