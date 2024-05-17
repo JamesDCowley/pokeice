@@ -32,6 +32,7 @@
 	const EVENT_GOT_GOOD_ROD
 	const EVENT_GOT_SUPER_ROD
 ; Johto story events
+	const EVENT_WAITING_ASPEN
 	const EVENT_GOT_POKEMON
 	const EVENT_GOT_CYNDAQUIL_FROM_ELM
 	const EVENT_GOT_TOTODILE_FROM_ELM
@@ -1050,7 +1051,7 @@
 ; The map script command macros `disappear` and `appear` set/clear these flags and immediately apply the effect on visibility.
 ; The map script command macros `setevent` and `clearevent` set/clear these flags, and their effects will be seen when the map is reloaded.
 ; Johto itemballs
-	const EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
+	const EVENT_STARTER_BALL_IN_LAB
 	const EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
 	const EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
 	const EVENT_VIOLET_CITY_PP_UP

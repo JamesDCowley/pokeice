@@ -13,8 +13,21 @@ SilentTownFlypointCallback:
 	endcallback
 
 SilentTownSuperNerdScript:
-	jumptextfaceplayer Text_urMom
+	checkevent EVENT_GOT_POKEMON
+	iftrue .LooksCool
+	checkevent EVENT_SAVED_ASPEN
+	iftrue .DoingLeagueChallenge
+	jumptextfaceplayer Text_NerdAspenLooking
+	end
 
+.LooksCool
+	jumptextfaceplayer Text_NerdIsThatMon
+	end
+.DoingLeagueChallenge
+	jumptextfaceplayer Text_NerdDoingLeagueChallenge
+	end
+
+	
 SilentTownPlayersHouseSign:
 	jumptext SilentTownPlayersHouseSignText
 
@@ -32,11 +45,34 @@ SilentTownPlayersHouseSignText:
 	text "<PLAYER>'s House"
 	done
 
-Text_urMom:
-	text "ur mom is gay"
-	line "lmao get pwned"
+Text_NerdAspenLooking:
+	text "I heard PROF."
+	line "ASPEN himself is"
+	cont "looking for you."
+
+	para "Lucky."
 	done
 
+Text_NerdIsThatMon:
+	text "Is that a"
+	line "#MON?"
+
+	para "Looks...cool."
+
+	para "Huh? I'm not"
+	line "jealous, you're"
+	cont "jealous!"
+	done
+
+Text_NerdDoingLeagueChallenge:
+	text "You're doing the"
+	line "LEAGUE CHALLENGE?"
+
+	para "Totally cool."
+	para "Very happy."
+	para "For you..."
+	line "... ..."
+	done
 Text_SilentTownDesc:
 	text "SILENT TOWN"
 
@@ -54,6 +90,11 @@ Text_AspenLab:
 	line "frontier of"
 	cont "#MON"
 	cont "research!"
+	done
+
+Text_AspenLab_ForSale:
+	text "FOR SALE"
+	para "GLACIER INC."
 	done
 
 Text_SilentTownGym:

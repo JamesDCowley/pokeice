@@ -98,6 +98,7 @@ MeetMomScript:
 .Finish:
 	special RestartMapMusic
 	turnobject PLAYERSHOUSE1F_MOM1, LEFT
+	setevent EVENT_WAITING_ASPEN
 	end
 
 MeetMomTalkedScript:
