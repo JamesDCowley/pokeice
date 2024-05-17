@@ -223,21 +223,32 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "Oh, <PLAYER>…! I"
+	line "got a knock on the"
 
-	para "ELM, was looking"
-	line "for you."
+	para "door from a"
+	line "scientist from"
+	cont "ASPEN LABS!"
+	
+	para "He said PROF."
+	line "APSEN wanted you"
+	cont "to do something"
+	cont "for him."
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "Could it be"
+	line "the ENDORSEMENT"
+	cont "you've been"
+	cont "wanting?"
 
 	para "Oh! I almost for-"
-	line "got! Your #MON"
+	line "got!"
 
-	para "GEAR is back from"
-	line "the repair shop."
+	para "I have a suprise"
+	line "for you!"
+
+
+	para "It's a #MON"
+	line "GEAR!"
 
 	para "Here you go!"
 	done
@@ -246,13 +257,13 @@ MomGivesPokegearText:
 	text "#MON GEAR, or"
 	line "just #GEAR."
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
+	para "You begged for"
+	line "this for your"
+	cont "birthday."
 
-	para "It comes with a"
-	line "CLOCK, PHONE,"
-	cont "and TOWN MAP!"
+	para "It comes with"
+	line "a CLOCK and a"
+	para "PHONE!"
 
 	para "Oh, the day of the"
 	line "week isn't set."
@@ -264,6 +275,10 @@ MomGivesPokegearText:
 IsItDSTText:
 	text "Is it Daylight"
 	line "Saving Time now?"
+
+	para "DST is between"
+	line "mid March and"
+	cont "early November."
 	done
 
 ComeHomeForDSTText:
@@ -279,11 +294,8 @@ ComeHomeForDSTText:
 	done
 
 KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the #GEAR"
-
-	para "on and select the"
-	line "PHONE icon?"
+	text "You kids are so"
+	line "smart these days!"
 	done
 
 DontKnowTheInstructionsText:
@@ -320,8 +332,8 @@ ReceivedStarterText:
 	done
 
 HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
+	text "PROF.ASPEN is"
+	line "waiting for you."
 
 	para "Hurry up, baby!"
 	done
