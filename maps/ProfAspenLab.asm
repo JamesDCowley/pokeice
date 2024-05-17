@@ -19,6 +19,8 @@ ProfAspenLabNoop2Scene:
 MeetAideScript:
     checkscene SCENE_PROFASPENLAB_AIDE_GIVE_MON
     iftrue .AideJustLeave
+    checkevent EVENT_GOT_POKEMON
+    iftrue .AideJustLeave
     jumptextfaceplayer Text_AideIntro
     setscene SCENE_PROFASPENLAB_AIDE_GIVE_MON
     end
@@ -49,7 +51,7 @@ AideGiveMonDownScript:
     iftrue .OnUp
     applymovement PROFASPENLAB_SCIENTIST1, AideWalkToPlayerDownMovement
     sjump AideGiveMonScript
-.OnUp
+.OnUp:
     applymovement PROFASPENLAB_SCIENTIST1, AideWalkToPlayerUpMovement
 AideGiveMonScript:
     opentext
@@ -66,14 +68,48 @@ AideGiveMonScript:
     iftrue .OnUpReturn
     applymovement PROFASPENLAB_SCIENTIST1, AideWalkToPCDownMovement
     sjump AideFinishScript
-.OnUpReturn
+.OnUpReturn:
     applymovement PROFASPENLAB_SCIENTIST1, AideWalkToPCUpMovement
 AideFinishScript:
     setevent EVENT_GOT_POKEMON
     setscene SCENE_PROFASPENLAB_NOOP
     end
 
+AidePickUpBallMovement:
+    step LEFT
+    step LEFT
+    turn_head DOWN
+    step_end
 
+AideWalkToPlayerDownMovement:
+    step RIGHT
+    step RIGHT
+    step DOWN
+    step DOWN
+    step DOWN
+    step LEFT
+    step_end
+
+AideWalkToPlayerUpMovement:
+    step RIGHT
+    step RIGHT
+    step DOWN
+    step DOWN
+    step LEFT
+    step_end
+
+AideWalkToPCDownMovement:
+    step RIGHT
+    step UP
+    step UP
+    step UP
+    step_end
+
+AideWalkToPCUpMovement:
+    step RIGHT
+    step UP
+    step UP
+    step_end
 
 
 ProfAspenLab_MapEvents:
