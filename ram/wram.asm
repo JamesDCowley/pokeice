@@ -3050,6 +3050,7 @@ wBattleTowerBattleRoomSceneID::     db
 wBattleTowerElevatorSceneID::       db
 wBattleTowerHallwaySceneID::        db
 wPlayersHouse1FSceneID::            db
+wProfAspenLabSceneID::				db
 wIndigoPlateauPokecenter1FSceneID:: db
 wWillsRoomSceneID::                 db
 wKogasRoomSceneID::                 db
